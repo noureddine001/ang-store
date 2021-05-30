@@ -1,0 +1,13 @@
+
+
+POST localhost:8282/product
+content-type : application/application/json
+
+{ 
+    "nameProduct" : "computer",
+    "description" : "lenovo computer",
+    "available" : true ,
+    "price" : 5000 ,
+    "quantity" : 20 ,
+    "avis" : 3.4
+}

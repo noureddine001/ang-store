@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expend-sm bg-light navbar-light">
+    <ul class="navbar navbar-nav">
+        <li>
+            <button (click)= "onGetAllProducts()" class="btn btn-outline-info">All</button>
+        </li>
+        <li>
+            <button class="btn btn-outline-info">Available</button>
+        </li>
+    </ul>
+</nav>
+<div class="container" *ngIf="products">
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Available</th>
+            <th>Avis</th>
+        </tr>
+        <tr *ngFor="let p of products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.quantity}}</td>
+            <td>{{p.available}}</td>
+            <td>{{p.avis}}</td>
+        </tr>
+    </table>
+</div>
